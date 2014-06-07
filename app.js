@@ -19,7 +19,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var expressValidator = require('express-validator');
-var connectAssets = require('connect-assets');
+//var connectAssets = require('connect-assets');
 var exphbs  = require('express3-handlebars');
 
 var diyHbsHelpers = require('diy-handlebars-helpers');
@@ -78,10 +78,6 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-app.use(connectAssets({
-  paths: ['public/css', 'public/js'],
-  helperContext: app.locals
-}));
 app.use(compress());
 app.use(logger('dev'));
 app.use(bodyParser.json());
