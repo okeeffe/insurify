@@ -1,31 +1,33 @@
-<div class="center-form panel col-xl-12">
-  <div class="panel-body">
-    <h2 class="text-center">Login</h2>
+<div class="container">
+  <div class="center-form panel col-xl-12">
+    <div class="panel-body">
+      <h2 class="text-center">Login</h2>
 
-    <!-- Form -->
-    <form action="/login" id="signin-form_id" method="POST">
-      <input type="hidden" name="_csrf" value={{_csrf}}>
+      <!-- Form -->
+      <form action="/login" id="signin-form_id" method="POST">
+        <input type="hidden" name="_csrf" value={{_csrf}}>
 
-      <div class="form-group">
-        <input type="email" name="email" id="email_id" class="form-control input-lg" placeholder="E-mail" autofocus="true">
-      </div> <!-- / Email -->
+        <div class="form-group">
+          <input type="email" name="email" id="email_id" class="form-control input-lg" placeholder="E-mail" autofocus="true">
+        </div> <!-- / Email -->
 
-      <div class="form-group signin-password">
-        <input type="password" name="password" id="password_id" class="form-control input-lg" placeholder="Password">
-        <a href="/forgot" class="forgot">Forgot?</a>
-      </div> <!-- / Password -->
+        <div class="form-group signin-password">
+          <input type="password" name="password" id="password_id" class="form-control input-lg" placeholder="Password">
+          <a href="/forgot" class="forgot">Forgot?</a>
+        </div> <!-- / Password -->
 
-      <div class="form-actions">
-        <input type="submit" value="Login" class="btn btn-primary btn-block btn-lg">
-      </div> <!-- / .form-actions -->
-    </form>
-    <!-- / Form -->
+        <div class="form-actions">
+          <input type="submit" value="Login" class="btn btn-primary btn-block btn-lg">
+        </div> <!-- / .form-actions -->
+      </form>
+      <!-- / Form -->
 
-    {{!-- <div class="signin-with">
-      <div class="header">or sign in with</div>
-      <a href="/auth/facebook" class="btn btn-lg btn-facebook rounded"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
-      <a href="/auth/twitter" class="btn btn-lg btn-info rounded"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
-      <a href="/auth/google" class="btn btn-lg btn-danger rounded"><i class="fa fa-google-plus"></i></a>
-    </div> --}}
+      {{!-- <div class="signin-with">
+        <div class="header">or sign in with</div>
+        <a href="/auth/facebook" class="btn btn-lg btn-facebook rounded"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+        <a href="/auth/twitter" class="btn btn-lg btn-info rounded"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+        <a href="/auth/google" class="btn btn-lg btn-danger rounded"><i class="fa fa-google-plus"></i></a>
+      </div> --}}
+    </div>
   </div>
 </div>
